@@ -3,8 +3,10 @@ function sleep(ms) {
 }
 
 async function main() {
-  while(true) {
+  while (true) {
     console.log('Containers rule!');
+    const favoriteFood = process.env.FAVORITE_FOOD;
+    console.log(`My favorite food is ${favoriteFood}`);
     await sleep(5000);
   }
 }
